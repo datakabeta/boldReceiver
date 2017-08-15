@@ -1,7 +1,7 @@
-port = process.env.port || 3000;
-
 var express = require('express');
 var app = new express();
+
+app.set('port', (process.env.PORT || 5000));
 
 app.route('/')
 .get(function(req,res){
@@ -13,6 +13,6 @@ app.route('/receive')
   res.status(200).send("Placeholder for BoldChat trigger receiver.");
 });
 
-app.listen(port, function(){
-  console.log("Server listening on Port "+ port);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
