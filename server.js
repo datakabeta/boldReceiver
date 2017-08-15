@@ -1,4 +1,5 @@
-var port = 80;
+var port = process.env.port || 3000;
+
 var express = require('express');
 var app = new express();
 
