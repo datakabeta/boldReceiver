@@ -7,7 +7,7 @@ app.get('/',function(req,res){
   res.status(200).send("You've reached Homepage.");
 });
 
-app.post('boldlogs',function(req,res){
+app.post('/boldlogs',function(req,res){
   res.status(200).send("Got BoldChat logs!");
   console.log("Received Bold POST!");
   console.log("Hostname \n" + req.hostname);
