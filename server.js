@@ -12,12 +12,15 @@ app.route('/boldlogs')
 .post(function(req,res){
   res.status(200).send("Got BoldChat logs!");
   console.log("Received Bold POST!");
+  console.log("Hostname \n" + req.hostname);
+  console.log("Body \n" + req.body);
+  console.log("\nCookies \n" + req.cookies);
+  console.log("\nFresh? \n" + req.fresh);
 })
 
 app.route('/boldlogs')
 .get(function(req,res){
   res.status(200).send("Get equivalent of Bold Node!");
-  console.log("Get Bold request, no POSTS!");
 })
 
 app.listen(app.get('port'), function() {
