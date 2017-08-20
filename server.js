@@ -12,9 +12,9 @@ app.post('/boldlogs',function(req,res){
   console.log("Received Bold POST!");
   //console.log(req.query);
   console.log(req.body);
-  console.log(req.body.City);
-  console.log(req.body.city);
   console.log("\nFresh? \n" + req.fresh);
+  console.log(req.get('Content-Type'));
+  console.log(req.get('content-type'));
 })
 
 app.listen(app.get('port'), function() {
