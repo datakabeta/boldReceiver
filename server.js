@@ -8,14 +8,14 @@ app.route('/')
   res.status(200).send("You've reached Homepage.");
 });
 
-app.route('/receive')
-.get(function(req,res){
-  res.status(200).send("Placeholder for BoldChat trigger receiver.");
-});
-
 app.route('/boldlogs')
 .post(function(req,res){
   res.status(200).send("Got BoldChat logs!");
+})
+
+app.route('/boldlogs')
+.get(function(req,res){
+  res.status(200).send("Get equivalent of Bold Node!");
 })
 
 app.listen(app.get('port'), function() {
