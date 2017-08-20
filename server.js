@@ -11,11 +11,13 @@ app.route('/')
 app.route('/boldlogs')
 .post(function(req,res){
   res.status(200).send("Got BoldChat logs!");
+  console.log("Received Bold POST!");
 })
 
 app.route('/boldlogs')
 .get(function(req,res){
   res.status(200).send("Get equivalent of Bold Node!");
+  console.log("Get Bold request, no POSTS!");
 })
 
 app.listen(app.get('port'), function() {
