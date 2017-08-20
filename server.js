@@ -13,6 +13,11 @@ app.route('/receive')
   res.status(200).send("Placeholder for BoldChat trigger receiver.");
 });
 
+app.route('/boldlogs')
+.post(function(req,res){
+  res.status(200).send("Got BoldChat logs!");
+})
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
