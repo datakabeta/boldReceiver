@@ -4,10 +4,11 @@
   "engines": {
     "node": "6.11.2",
     "npm": "3.10.10"
-	 },
+  },
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4"
   },
   "devDependencies": {},
