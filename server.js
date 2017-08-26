@@ -19,15 +19,17 @@ app.post('/boldlogs',function(req,res){
   console.log("\nFresh? \n" + req.fresh);
 //  console.log(req.get('Content-Type'));
   //res.json(req.body);
-});
-console.log("Moving on... \n");
-AID = process.env.AID || 0;
-SETTINGSID = process.env.APISETTINGSID || 0;
-KEY = process.env.APIKEY || 0;
 
-console.log("AID: "+AID);
-console.log("KEY: "+KEY);
-console.log("SETTINGSID: "+SETTINGSID);
+  console.log("Moving on... \n");
+  AID = process.env.AID || 0;
+  SETTINGSID = process.env.APISETTINGSID || 0;
+  KEY = process.env.APIKEY || 0;
+
+  console.log("AID: "+AID);
+  console.log("KEY: "+KEY);
+  console.log("SETTINGSID: "+SETTINGSID);
+
+});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
