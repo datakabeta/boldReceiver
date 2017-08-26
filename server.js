@@ -13,7 +13,7 @@ app.post('/boldlogs',function(req,res){
   console.log(req.body);
   console.log("\nFresh? \n" + req.fresh);
   console.log(req.get('Content-Type'));
-})
+});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
