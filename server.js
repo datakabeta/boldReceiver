@@ -10,6 +10,7 @@ app.get('/',function(req,res){
 });
 
 app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.post('/boldlogs',function(req,res){
   res.status(200).send("Got BoldChat logs!");
@@ -17,6 +18,7 @@ app.post('/boldlogs',function(req,res){
   console.log(req.body);
   console.log("\nFresh? \n" + req.fresh);
   console.log(req.get('Content-Type'));
+  res.json(req.body);
 });
 
 app.listen(app.get('port'), function() {
