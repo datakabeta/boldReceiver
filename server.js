@@ -13,15 +13,14 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.post('/boldlogs',function(req,res){
-  res.status(200).send("Got BoldChat logs!");
   console.log("Received Bold POST!");
+  console.log("Body: \n");
   console.log(req.body);
   console.log("\nFresh? \n" + req.fresh);
-  console.log(req.get('Content-Type'));
+//  console.log(req.get('Content-Type'));
   //res.json(req.body);
-  res.send({ "result": "success" });
 });
-
+console.log("Moving on... \n");
 AID = process.env.AID || 0;
 SETTINGSID = process.env.APISETTINGSID || 0;
 KEY = process.env.APIKEY || 0;
