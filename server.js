@@ -5,6 +5,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.get('/',function(req,res){
   res.status(200).send("You've reached the Homepage.");
+  console.log("Homepage reached!");
 });
 
 app.post('/boldlogs',function(req,res){
