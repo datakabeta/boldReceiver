@@ -1,7 +1,7 @@
 {
-  "name": "boldReceiver",
+  "name": "boldnode",
   "version": "1.0.0",
-  "description": "",
+  "description": "bold receiver",
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {},
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/tinkeringtechie/boldReceiver.git"
   },
-  "author": "",
+  "author": "kashif sami",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tinkeringtechie/boldReceiver/issues"
