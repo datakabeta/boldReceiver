@@ -3,13 +3,24 @@ function main() {
   var app = new express();
   var bodyParser = require('body-parser');
 
+  console.log("Got here0");
+
   app.set('port', (process.env.PORT || 3000));
 
-  console.log("Got here");
+  console.log("Got here1");
+
+  app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+  });
+
+  console.log("Got here2");
+
   //Sample homepage code.
   app.get('/',function(req,res){
     res.status(200).send("You've reached the Homepage.");
   });
+
+  console.log("Got here3");
 
   app.use(bodyParser.json()); // for parsing application/json
   app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -20,7 +31,5 @@ function main() {
     console.log(req.body);
   });
 
-  app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
-  });
+
 };
