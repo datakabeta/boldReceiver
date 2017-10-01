@@ -3,7 +3,7 @@ function main() {
   var app = new express();
   var bodyParser = require('body-parser');
 
-  app.set('port', (process.env.PORT || 5000));
+  app.set('port', (process.env.PORT || 3000));
   app.use(bodyParser.json()); // for parsing application/json
   app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 

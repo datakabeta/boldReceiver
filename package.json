@@ -18,5 +18,13 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinkeringtechie/boldReceiver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tinkeringtechie/boldReceiver/issues"
+  },
+  "homepage": "https://github.com/tinkeringtechie/boldReceiver#readme"
 }
