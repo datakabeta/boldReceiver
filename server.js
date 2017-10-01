@@ -4,13 +4,15 @@ function main() {
   var bodyParser = require('body-parser');
 
   app.set('port', (process.env.PORT || 3000));
-  app.use(bodyParser.json()); // for parsing application/json
-  app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+  console.log("Got here");
   //Sample homepage code.
   app.get('/',function(req,res){
     res.status(200).send("You've reached the Homepage.");
   });
+
+  app.use(bodyParser.json()); // for parsing application/json
+  app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
   //Receives BoldChat POST requests
   app.post('/boldlogs',function(req,res){
