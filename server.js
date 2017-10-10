@@ -15,13 +15,15 @@
    console.log('Node app is running on port ', app.get('port'));
   });
 
-  app.use(function(req,res){
-    res.send("Random page!");
-  })
-
   app.get('/boldlogs',function(req,res){
+    console.log("Logs");
     res.send(res.body);
     console.log(res.body);
+  })
+
+  //404 Catch all
+  app.use(function(req,res){
+    res.send("Random page!");
   })
 
   // console.log("Got here2");
