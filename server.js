@@ -1,4 +1,4 @@
-// function main() {
+
   var express = require('express');
   var app = new express();
   var bodyParser = require('body-parser');
@@ -15,19 +15,17 @@
    console.log('Node app is running on port ', app.get('port'));
   });
 
-  console.log("Got here2");
-
-  //Sample homepage code.
-  app.get('/',function(req,res){
-    res.status(200).send("You've reached the Homepage.");
-  });
-
-  console.log("Got here3");
-
-  //Receives BoldChat POST requests
-  app.post('/boldlogs',function(req,res){
-    console.log("Chat Details: \n");
-    console.log(req.body);
-  });
-
-// };
+  // console.log("Got here2");
+  //
+  // //Sample homepage code.
+  // app.get('/',function(req,res){
+  //   res.status(200).send("You've reached the Homepage.");
+  // });
+  //
+  // console.log("Got here3");
+  //
+  // //Receives BoldChat POST requests
+  // app.post('/boldlogs',function(req,res){
+  //   console.log("Chat Details: \n");
+  //   console.log(req.body);
+  // });
