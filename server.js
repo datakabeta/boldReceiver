@@ -19,6 +19,11 @@
     res.send("Random page!");
   })
 
+  app.get('/boldlogs',function(req,res){
+    res.send(res.body);
+    console.log(res.body);
+  })
+
   // console.log("Got here2");
   //
   // //Sample homepage code.
