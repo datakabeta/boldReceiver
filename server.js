@@ -15,6 +15,10 @@
    console.log('Node app is running on port ', app.get('port'));
   });
 
+  app.use(function(req,res){
+    res.send("Random page!");
+  })
+
   // console.log("Got here2");
   //
   // //Sample homepage code.
