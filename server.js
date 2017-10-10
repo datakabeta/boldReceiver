@@ -6,7 +6,7 @@
   console.log("Got here0");
   app.use(bodyParser.json()); // for parsing application/json
   app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-  //app.set('port', (process.env.PORT || 3000));
+  app.set('port', (process.env.PORT || 3000));
 
   console.log("Got here1");
 
