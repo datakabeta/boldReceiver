@@ -17,7 +17,7 @@
 
   app.post('/boldlogs',function(req,res){
     console.log("Chat Log \n");
-    console.log(res.body);
+    console.log(req.body);
     console.log("\n");
   })
 
