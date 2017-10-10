@@ -15,10 +15,10 @@
    console.log('Node app is running on port ', app.get('port'));
   });
 
-  app.get('/boldlogs',function(req,res){
-    console.log("Logs");
-    res.send(res.body);
+  app.post('/boldlogs',function(req,res){
+    console.log("Chat Log \n");
     console.log(res.body);
+    console.log("\n");
   })
 
   //404 Catch all
