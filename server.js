@@ -17,6 +17,7 @@
     console.log("Chat Log \n");
     console.log(req.body);
     console.log("\n");
+    res.send('Received chat');
   })
 
   //404 Catch all
