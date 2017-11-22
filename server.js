@@ -14,6 +14,8 @@
 
   //Handles Bold exports
   app.post('/boldlogs',function(req,res){
+    var contype = req.headers['content-type'];
+    console.log(contype);
     console.log("Chat Log \n");
     console.log(req.body);
     console.log("\n");
@@ -23,8 +25,6 @@
     console.log("\n");
     console.log(req.path);
     console.log("\n");
-    var contype = req.headers['content-type'];
-    console.log(contype);
     res.send('Received chat');
   })
 
