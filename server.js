@@ -23,6 +23,8 @@
     console.log("\n");
     console.log(req.path);
     console.log("\n");
+    var contype = req.headers['content-type'];
+    console.log(contype);
     res.send('Received chat');
   })
 
