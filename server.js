@@ -17,6 +17,8 @@
     console.log(contype);
     console.log("Chat Log \n");
     console.log(req.body);
+    console.log("Request Parameters \n");
+    console.log(req.params);
     console.log("\n");
     res.send('Received chat!');
   })
