@@ -18,13 +18,7 @@
     console.log("Chat Log \n");
     console.log(req.body);
     console.log("\n");
-    console.log(req.hostname);
-    console.log("\n");
-    console.log(req.baseURL);
-    console.log("\n");
-    console.log(req.path);
-    console.log("\n");
-    res.send('Received chat');
+    res.send('Received chat!');
   })
 
   //404 Catch all
