@@ -3,7 +3,7 @@
   var app = new express();
   var bodyParser = require('body-parser');
 
-  app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+  app.use(bodyParser.urlencoded({ extended: false })); // for parsing application/x-www-form-urlencoded
   app.set('port', (process.env.PORT || 3000));
 
   //Create HTTP server and listen on default port
