@@ -18,7 +18,7 @@
     console.log("Chat Log \n");
     console.log(req.body);
     console.log("Request Parameters \n");
-    console.log(req.params);
+    console.log(req.query);
     console.log("\n");
     res.send('Received chat!');
   })
