@@ -16,6 +16,12 @@
   app.post('/boldlogs',function(req,res){
     console.log("Chat Log: \n");
     console.log(req.body);
+    console.log(req.ip);
+    console.log(req.hostname);
+    console.log(req.ips);
+    console.log(req.originalUrl);
+    console.log(req.subdomains);
+    console.log(req.protocol);
     res.send('Received chat!');
   })
 
